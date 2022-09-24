@@ -7,6 +7,17 @@ function Pizza () {
   this.customer;
 }
 
+Pizza.prototype.comboLife = function () {
+
+}
+
+Pizza.prototype.superSize = function () {
+
+}
+
+Pizza.prototype.myWallet = function () {
+
+}
 
 //User Interface//
 window.addEventListener("load", function() {
