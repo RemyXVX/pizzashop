@@ -1,6 +1,6 @@
 #### Goals;
 # pizza
-_ toppings
+_toppings_
   * item plus combination *
       + cheese 
       + mushrooms
@@ -8,13 +8,13 @@ _ toppings
       + sausage
   * true and false statement *
 
-_ size
+_size_
   + large - 14 
   + mid - 10 
   + small - 6
   * array with if/else statements *
 
-_ cost
+_cost_
   + per item 
   + per size 
   + overall total 
