@@ -11,7 +11,7 @@ _ toppings
 _ size
   + large - 14 
   + mid - 10 
-  + small - 7 
+  + small - 6
   * array with if/else statements *
 
 _ cost
@@ -20,7 +20,7 @@ _ cost
   + overall total 
   * index; maybe for statement?? *
 
-## test 1:
+## test 1: #if I place a toping with the function, 
 *   *
 ## code:
 ```
