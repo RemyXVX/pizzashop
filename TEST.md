@@ -36,7 +36,7 @@ function Pizza () {
 **Player() = undefined**
 ___
 
-## test 2:
+## test 2: Made a function that would loop through 
 *   *
 ## code:
 ```
