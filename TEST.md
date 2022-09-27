@@ -20,14 +20,20 @@ _cost_
   + overall total 
   * index; maybe for statement?? *
 
-## test 1: #if I place a toping with the function, 
-*   *
+## test 1: #Pizza should contain the value of topping, size, cost of item, and total
+*_Pizza_ should contain the value of topping, size, cost of item, and total at load to be referenced*
 ## code:
 ```
-
+function Pizza () {
+  this.topping = ["cheese", "mushrooms", "pepperoni", "sausage", " "];
+  this.size = ["small", "medium", "large", " "];
+  this.costItem = 0;
+  this.totalCost = 0;
+  this.customer;
+}
 ```
 ## output:
-**    **
+**Player() = undefined**
 ___
 
 ## test 2:
