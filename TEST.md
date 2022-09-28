@@ -36,14 +36,22 @@ function Pizza () {
 **Player() = undefined**
 ___
 
-## test 2: Made a function that would loop through 
-*   *
+## test 2:
+*Next, the function for toppings should return length of the this.topping*
 ## code:
 ```
-
+function top() {
+  let topping = this.topping;
+  for(i = 0; i < topping.length; i++) {
+    console.log(topping[i]);
+  }
 ```
 ## output:
-**    **
+**top(); 
+  cheese
+  mushrooms
+  pepperoni
+  sausage**
 ___
 
 ## test 3:
