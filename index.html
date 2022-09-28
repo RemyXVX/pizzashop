@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
   <script src="js/scripts.css" defer></script>
   <title>Pizza Parlor</title>
 </head>
@@ -12,12 +13,11 @@
   <div class="container">
 
     <div class="header" id="first">
-      <h1>Pizza Pizza Pizzaa</h1>
-      <p>Welcome to the world of pies!</p>
+      <h1 class="pretty">Pizza Pizza Pizzaa</h1>
+      <p class="pretty">Welcome to the world of pies!</p>
       <button class="button" type="submit" id="btnGo">FIRE FIRE FIRE</button>
     </div>
-    <br>
-    <div class="hidden" id="second">
+    <div class="got1" id="second">
       <div class="form">
         <form class="form" id="form">
           <label for="name">Name:</label>
@@ -26,20 +26,20 @@
           <input type="text" id="phone" name="phone"><br>
           <label for="adress">Address:</label>
           <input type="text" id="adress" name="adress"><br>
-          <input type="submit" value="letsgoo">
+          <input id="subBtn" type="submit" value="letsgoo">
         </form>
       </div>
     </div>
-    <div class="hidden2" id="third">
-      <h2>Select pizza pie size:</h2>
+    <div class="got2" id="third">
+      <h2 class="title">Select pizza pie size:</h2>
       <select class="pizzasize">
         <option value="small">small</option>
         <option value="medium">medium</option>
         <option value="large">large</option>
       </select>
     </div>
-    <div class="hidden2">
-      <h2>Select pizza pie toppings:</h2>
+    <div class="got3">
+      <h2 class="title">Select pizza pie toppings:</h2>
       <form>
         <input type="checkbox" id="topping1" name="topping1" value="cheese">
         <label for="vehicle1">Cheese</label><br>

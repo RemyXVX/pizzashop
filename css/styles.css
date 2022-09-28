@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("../img/background.jpg");
+}
+
+#btnGo {
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.header {
+  border: 15px solid rgb(126, 73, 73);
+  background-color: rgb(250, 213, 165);
+  text-align: center;
+  font-size: 35px;
+  font-family: Times, serif;
+}
+
+.got1 {
+  font-size: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border-left: 2px solid rgb(126, 73, 73);
+  border-right: 2px solid rgb(126, 73, 73);
+  padding-top: 15px;
+  background-color: white;
+}
+
+#name {
+  margin-left: 4px;
+}
+
+#adress {
+  padding-left: 0px;
+  margin-right: 20px;
+}
+
+.subBtn {
+  margin-left: 200px;
+  margin-right: 20px;
+}
+
+.got2 {
+  border-left: 2px solid rgb(126, 73, 73);
+  border-right: 2px solid rgb(126, 73, 73);
+  padding: 5px;
+  background-color: white;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.got3 {
+  border-left: 2px solid rgb(126, 73, 73);
+  border-right: 2px solid rgb(126, 73, 73);
+  border-bottom: 2px solid rgb(126, 73, 73);
+  padding: 5px;
+  background-color: white;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
