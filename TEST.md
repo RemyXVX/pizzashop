@@ -20,42 +20,32 @@ _cost_
   + overall total 
   * index; maybe for statement?? *
 
-## test 1: #Pizza should contain the value of topping, size, cost of item, and total
+## test 1:
 *_Pizza_ should contain the value of topping, size, cost of item, and total at load to be referenced*
 ## code:
 ```
 function Pizza () {
-  this.topping = ["cheese", "mushrooms", "pepperoni", "sausage", " "];
-  this.size = ["small", "medium", "large", " "];
-  this.costItem = 0;
-  this.totalCost = 0;
-  this.customer;
+  this.topping = [];
+  this.size = "";
+  this.cost = 0
 }
 ```
 ## output:
-**Player() = undefined**
+**Pizza() = undefined**
 ___
 
 ## test 2:
-*Next, the function for toppings should return length of the this.topping*
+* *
 ## code:
 ```
-function top() {
-  let topping = this.topping;
-  for(i = 0; i < topping.length; i++) {
-    console.log(topping[i]);
-  }
+
 ```
 ## output:
-**top(); 
-  cheese
-  mushrooms
-  pepperoni
-  sausage**
+** **
 ___
 
 ## test 3:
-*   *
+*If I used the function to return a specific topping   *
 ## code:
 ```
 

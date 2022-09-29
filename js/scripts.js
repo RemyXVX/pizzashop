@@ -1,24 +1,23 @@
 //Business Logic//
 function Pizza () {
-  this.topping = ["cheese", "mushrooms", "pepperoni", "sausage", " "];
-  this.size = ["small", "medium", "large", " "];
-  this.costItem = 0;
-  this.totalCost = 0;
-  this.customer;
+  this.topping = [];
+  this.size = "";
+  this.cost = 0
 }
 
-Pizza.prototype.comboLife = function () {
-  let topping = this.topping;
-  for(i = 0; i < topping.length; i++) {
-    console.log(topping[i]);
-  }
+function Cost () {
+
 }
 
 Pizza.prototype.superSize = function () {
+  
+}
+
+Pizza.prototype.comboLife = function () {
 
 }
 
-Pizza.prototype.myWallet = function () {
+Cost.prototype.myWallet = function () {
 
 }
 

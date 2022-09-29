@@ -8,6 +8,14 @@ body{
   background-image: url("../img/background.jpg");
 }
 
+#welcome {
+  text-align: center;
+  margin: 1px;
+  border: 5px solid black;
+  background-color: rgba(250, 213, 165, 0.986);
+
+}
+
 #btnGo {
   font-size: 15px;
   font-weight: bold;
