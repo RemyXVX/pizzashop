@@ -43,27 +43,26 @@ Pizza.prototype.comboLife = function (topping) {
 
 function lessGo (event) {
   event.preventDefault()
-  let custName = document.getElementById("formName1").value;
-  console.log(custName)
+  let custName = document.querySelector("input#name").value;
   let thePie = document.getElementById("pizzaSize").value;
-  console.log(thePie)
-  let topSelection = 0;
-  console.log(topSelection)
-  document.querySelector("input[name=topping]:checked").forEach(function(element) {
-    let topping = element['value'];
-    topArr.push(topping);
-  })
+  let topSelection = [];
+  const choiceTop = document.querySelector("input[type=checkbox][name='topping']:checked");
+  for (let i = 0; i < choiceTop.length; i++) {
+    topSelection.push(choiceTop[i].value);
+  };
 
   const totalOf = new Pizza (custName, thePie, topSelection);
+  let overAllCost = totalOf.comboLife() + totalOf.superSize();
+  let chooseTops = topSelection.join(" ")
 
-  document.querySelector("span#nameOfCust").innerText = custName
-  document.querySelector("span#sizeOfPizza").innerText = thePie
-  document.querySelector("span#topsOfPizza").innerText = topSelection
-  document.querySelector("span#totalFor").innerText = custName
+  document.querySelector("span#nameOfCust").innerHTML = custName;
+  document.querySelector("span#sizeOfPizza").innerHTML = thePie;
+  document.querySelector("span#topsOfPizza").innerHTML = chooseTops;
+  document.querySelector("span#totalFor").innerText = overAllCost;
   
 }
 
 
 window.addEventListener("load", function() {
-document.querySelector("button#cookDatPizza").addEventListener("onclick", lessGo);
+document.querySelector("form#formName1").addEventListener("submit", lessGo);
 })
