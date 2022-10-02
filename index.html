@@ -15,51 +15,45 @@
     <div class="header" id="first">
       <h1 class="pretty">Pizza Pizza Pizzaa</h1>
       <p class="pretty">Welcome to the world of pies!</p>
-      <form>
-        <input class="button" type="submit" id="btnGo" value="FIRE FIRE FIRE">
-      </form>
     </div>
 
     <div class="everything">
       <div class="got1" id="second">
         <div class="form">
-          <form class="form" id="form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br>
-            <label for="phone">Phone:</label>
-            <input type="text" id="phone" name="phone"><br>
-            <label for="adress">Address:</label>
-            <input type="text" id="adress" name="adress"><br>
-            <input id="subBtn" type="onclick" value="letsgoo">
+          <form class="form" id="formName1">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name"><br>
+              </div>
+            </div>
+            <div class="got2" id="third">
+              <h2 class="title">Select pizza pie size:</h2>
+              <select class="pizzaSize">
+                <option class="opt" id="optSize" value=" "> </option>
+                <option class="opt" id="optSize" value="small">Small $7</option>
+                <option class="opt" id="optSize" value="medium">Medium $10</option>
+                <option class="opt" id="optSize" value="large">Large $14</option>
+              </select>
+            </div>
+            <div class="got3">
+              <h2 class="title">Select pizza pie toppings:</h2>
+              <p class="pretty">All toppings are an additional $2</p>
+                <input type="checkbox" id="topping1" name="topping" value="vcheese">
+                <label for="toppingChoice">Vcheese</label><br>
+                <input type="checkbox" id="topping2" name="topping" value="mushrooms">
+                <label for="toppingChoice">Mushrooms</label><br>
+                <input type="checkbox" id="topping3" name="topping" value="pepperoni">
+                <label for="toppingChoice">Pepperoni</label><br>
+                <input type="checkbox" id="topping4" name="topping" value="sausage">
+                <label for="toppingChoice">Sausage</label><br>
+                <button type="submit" id="cookDatPizza" class="btn">Cook dat Pizza</button>
           </form>
+        <br>
+        <div class="hidd">
+          <h2>Eat up!</h2>
+          <p>
+            <span id="nameOfCust"> </span>! Your <span id="sizeOfPizza"> </span> with <span id="topsOfPizza"> </span> is ready! It's <span id="totalFor"> </span>
+          </p>
         </div>
-      </div>
-      <div class="got2" id="third">
-        <h2 class="title">Select pizza pie size:</h2>
-        <select class="pizzaSize">
-          <option class="opt" id="optSize" value=" "> </option>
-          <option class="opt" id="optSize" value="small">Small $7</option>
-          <option class="opt" id="optSize" value="medium">Medium $10</option>
-          <option class="opt" id="optSize" value="large">Large $14</option>
-        </select>
-      </div>
-      <div class="got3">
-        <h2 class="title">Select pizza pie toppings:</h2>
-        <p class="pretty">All toppings are an additional $2</p>
-        <form class="form" id="form">
-          <input type="checkbox" id="topping1" name="topping" value="vcheese">
-          <label for="toppingChoice">Vcheese</label><br>
-          <input type="checkbox" id="topping2" name="topping" value="mushrooms">
-          <label for="toppingChoice">Mushrooms</label><br>
-          <input type="checkbox" id="topping3" name="topping" value="pepperoni">
-          <label for="toppingChoice">Pepperoni</label><br>
-          <input type="checkbox" id="topping4" name="topping" value="sausage">
-          <label for="toppingChoice">Sausage</label><br>
-          <input type="submit" value="Cook dat pizza">
-        </form>
-      </div>
-      <div>
-        <span id="random"></span>
       </div>
       <div id="welcome" class="">
         <img id="img" src="img/pizzachild.jpg"></img>

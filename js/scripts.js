@@ -43,20 +43,27 @@ Pizza.prototype.comboLife = function (topping) {
 
 function lessGo (event) {
   event.preventDefault()
-const newPie = document.getElementById("optSize").value;
-let topArr = [];
-document.querySelectorAll("input[name=pizza-toppings]:checked").forEach(function(element) {
-  let topping = element['value'];
-  topArr.push(topping);
+  let custName = document.getElementById("formName1").value;
+  console.log(custName)
+  let thePie = document.getElementById("pizzaSize").value;
+  console.log(thePie)
+  let topSelection = 0;
+  console.log(topSelection)
+  document.querySelector("input[name=topping]:checked").forEach(function(element) {
+    let topping = element['value'];
+    topArr.push(topping);
   })
+
+  const totalOf = new Pizza (custName, thePie, topSelection);
+
+  document.querySelector("span#nameOfCust").innerText = custName
+  document.querySelector("span#sizeOfPizza").innerText = thePie
+  document.querySelector("span#topsOfPizza").innerText = topSelection
+  document.querySelector("span#totalFor").innerText = custName
+  
 }
 
-function custAll (event){
-  event.preventDefault;
-
-}
 
 window.addEventListener("load", function() {
-document.querySelector("input#btnGo").addEventListener("submit", lessGo);
-this.document.querySelector("form").addEventListener("onclick", customeInfo);
+document.querySelector("button#cookDatPizza").addEventListener("onclick", lessGo);
 })
