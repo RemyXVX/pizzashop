@@ -2,7 +2,7 @@
 # pizza
 _toppings_
   * item plus combination *
-      + cheese 
+      + vcheese 
       + mushrooms
       + pepperoni
       + sausage
@@ -63,10 +63,73 @@ this.size = size
   }
 ```
 ## output:
-**this.size[any size] = value **
+**this.size[any size] = value**
 ___
 
 ## test 4:
+*comboLife prototype will be able to return vcheese as the value*
+## code:
+```
+this.topping = ["vcheese"]
+if(this.topping === "vcheese") {
+  console.log("this is vegan cheese");
+}
+```
+## output:
+**console.log("this is vegan cheese");**
+___
+
+## test 5:
+*   *
+## code:
+```
+
+```
+## output:
+**    **
+___
+
+## test 6:
+*   *
+## code:
+```
+
+```
+## output:
+**    **
+___
+
+## test 7:
+*   *
+## code:
+```
+
+```
+## output:
+**    **
+___
+
+## test 8:
+*   *
+## code:
+```
+
+```
+## output:
+**    **
+___
+
+## test 9:
+*   *
+## code:
+```
+
+```
+## output:
+**    **
+___
+
+## test 10:
 *   *
 ## code:
 ```

@@ -24,8 +24,21 @@ Pizza.prototype.superSize = function (size) {
   }
 }
 
-Pizza.prototype.comboLife = function () {
-
+Pizza.prototype.comboLife = function (topping) {
+  this.topping = topping
+  for(i = 0; i <= topping.length; i++) {
+    if (this.topping === "Vcheese") {
+      console.log("this is vegan cheese");
+    } if (this.topping === "mushrooms") {
+      console.log("this is mushrooms");
+    } if (this.topping === "pepperoni") {
+    console.log("this is pepperoni");
+    } if (this.topping === "sausage") {
+      console.log("this is sausage");
+    } if (this.topping === " ") {
+      console.log(nothing);
+    }
+  }
 }
 
 Cost.prototype.myWallet = function () {
