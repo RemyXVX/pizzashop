@@ -11,7 +11,7 @@ _toppings_
 _size_
   + large - 14 
   + mid - 10 
-  + small - 6
+  + small - 7
   * array with if/else statements *
 
 _cost_
@@ -27,25 +27,28 @@ _cost_
 function Pizza () {
   this.topping = [];
   this.size = "";
-  this.cost = 0
+  this.cost = 0;
 }
 ```
 ## output:
-**Pizza() = undefined**
+**Pizza() = this.topping = []; this.size =""; this.cost = 0;**
 ___
 
 ## test 2:
-* *
+*Prototype function for superSize will return a value*
 ## code:
 ```
-
+this.size = ["small"]
+if (this.size === "small") {
+  this.cost = 7;
+}
 ```
-## output:
-** **
+## output: 
+**this.cost = 7**
 ___
 
 ## test 3:
-*If I used the function to return a specific topping   *
+*  *
 ## code:
 ```
 
