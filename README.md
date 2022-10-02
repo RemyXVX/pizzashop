@@ -13,10 +13,10 @@
 * Node.JS
 
 ## Description
-_A webpage for a pizza shop that the user can input what they want on their pizza. It will display the use of Objects, for loops, and other methods to be to accomplish this_
+_A webpage for a pizza shop that the user can input what they want on their pizza. It will display the use of Objects, for loops, and other methods to be to accomplish this. For test, please seeing https://github.com/RemyXVX/Pizza-Parlor/blob/main/TEST.md_
 
 ## Webpage
-* https://github.com/RemyXVX/Pizza-Parlor
+* https://remyxvx.github.io/Pizza-Parlor/
 
 ## Setup/Installation Requirements
 * _Chrome web browser for best compatiblity_
@@ -25,7 +25,7 @@ _A webpage for a pizza shop that the user can input what they want on their pizz
 * _Installation of Node.JS applied for language_
 
 ## Known Bugs
-* _less of a known bug but more of not fully completed. Still working on the business logic._
+* _Currently still working on applying my BL into my code. I have been able to successful push most UI onto the dom._
 
 ## License
 * _MIT_
