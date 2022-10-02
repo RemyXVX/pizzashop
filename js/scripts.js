@@ -5,10 +5,7 @@ function Pizza () {
   this.topping = [];
   this.size = "";
   this.cost = 0
-}
-
-function Cost () {
-
+  this.customer
 }
 
 Pizza.prototype.superSize = function (size) {
@@ -22,6 +19,7 @@ Pizza.prototype.superSize = function (size) {
   } else {
     nothing;
   }
+  return this.cost
 }
 
 Pizza.prototype.comboLife = function (topping) {
@@ -34,18 +32,31 @@ Pizza.prototype.comboLife = function (topping) {
     this.cost += 2;
   } else if (this.topping === "sausage") {
     this.cost += 2;
-  } else (this.topping === " ") 
+  } else {
     nothing;
+  }
+  return this.cost
 }
 
-
-Cost.prototype.myWallet = function () {
-
-}
 
 //User Interface//
 
+function lessGo (event) {
+  event.preventDefault()
+const newPie = document.getElementById("optSize").value;
+let topArr = [];
+document.querySelectorAll("input[name=pizza-toppings]:checked").forEach(function(element) {
+  let topping = element['value'];
+  topArr.push(topping);
+  })
+}
+
+function custAll (event){
+  event.preventDefault;
+
+}
 
 window.addEventListener("load", function() {
-
+document.querySelector("input#btnGo").addEventListener("submit", lessGo);
+this.document.querySelector("form").addEventListener("onclick", customeInfo);
 })

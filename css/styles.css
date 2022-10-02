@@ -42,12 +42,12 @@ body{
 }
 
 #name {
-  margin-left: 4px;
+  margin-left: 5px;
 }
 
 #adress {
   padding-left: 0px;
-  margin-right: 20px;
+  margin-right: 18px;
 }
 
 .subBtn {
@@ -64,6 +64,16 @@ body{
   padding-top: 20px;
 }
 
+select {
+  width: 150px;
+}
+
+.opt {
+  overflow: visible;
+  white-space: wrap;
+  width: 100px;
+}
+
 .title {
   font-weight: bold;
 }
@@ -76,4 +86,13 @@ body{
   background-color: white;
   padding-bottom: 20px;
   padding-top: 20px;
+}
+
+.pretty {
+  font-style: italic;
+}
+
+#welcome {
+  display: block;
+ 
 }
