@@ -26,20 +26,18 @@ Pizza.prototype.superSize = function (size) {
 
 Pizza.prototype.comboLife = function (topping) {
   this.topping = topping
-  for(i = 0; i <= topping.length; i++) {
-    if (this.topping === "Vcheese") {
-      console.log("this is vegan cheese");
-    } if (this.topping === "mushrooms") {
-      console.log("this is mushrooms");
-    } if (this.topping === "pepperoni") {
-    console.log("this is pepperoni");
-    } if (this.topping === "sausage") {
-      console.log("this is sausage");
-    } if (this.topping === " ") {
-      console.log(nothing);
-    }
-  }
+  if (this.topping === "vcheese") {
+    this.cost += 2;
+  } else if (this.topping === "mushrooms") {
+    this.cost += 2;
+  } else if (this.topping === "pepperoni") {
+    this.cost += 2;
+  } else if (this.topping === "sausage") {
+    this.cost += 2;
+  } else (this.topping === " ") 
+    nothing;
 }
+
 
 Cost.prototype.myWallet = function () {
 

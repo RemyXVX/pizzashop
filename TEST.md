@@ -80,13 +80,23 @@ if(this.topping === "vcheese") {
 ___
 
 ## test 5:
-*   *
+*comboLife should be able to have any choice come back as a value; cost included*
 ## code:
 ```
-
+this.topping = topping
+  if (this.topping === "vcheese") {
+    this.cost += 2;
+  } else if (this.topping === "mushrooms") {
+    this.cost += 2;
+  } else if (this.topping === "pepperoni") {
+    this.cost += 2;
+  } else if (this.topping === "sausage") {
+    this.cost += 2;
+  } else (this.topping === " ") 
+    nothing;
 ```
 ## output:
-**    **
+**this.topping[any topping] += value**
 ___
 
 ## test 6:
