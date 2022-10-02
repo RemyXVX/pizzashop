@@ -8,8 +8,8 @@ function Pizza () {
   this.customer
 }
 
-Pizza.prototype.superSize = function (size) {
-  this.size = size
+Pizza.prototype.superSize = function () {
+  let size = 0;
   if (this.size === "small") {
     this.cost = 7;
   } else if (this.size === "medium") {
@@ -19,11 +19,11 @@ Pizza.prototype.superSize = function (size) {
   } else {
     nothing;
   }
-  return this.cost
+  return this.cost;
 }
 
-Pizza.prototype.comboLife = function (topping) {
-  this.topping = topping
+Pizza.prototype.comboLife = function () {
+  let topping = 0;
   if (this.topping === "vcheese") {
     this.cost += 2;
   } else if (this.topping === "mushrooms") {
@@ -35,7 +35,7 @@ Pizza.prototype.comboLife = function (topping) {
   } else {
     nothing;
   }
-  return this.cost
+  return this.cost;
 }
 
 
@@ -43,23 +43,24 @@ Pizza.prototype.comboLife = function (topping) {
 
 function lessGo (event) {
   event.preventDefault()
+  let thePizza = new Pizza;
   let custName = document.querySelector("input#name").value;
   let thePie = document.getElementById("pizzaSize").value;
-  let topSelection = [];
-  const choiceTop = document.querySelector("input[type=checkbox][name='topping']:checked");
-  for (let i = 0; i < choiceTop.length; i++) {
-    topSelection.push(choiceTop[i].value);
-  };
 
-  const totalOf = new Pizza (custName, thePie, topSelection);
-  let overAllCost = totalOf.comboLife() + totalOf.superSize();
-  let chooseTops = topSelection.join(" ")
+  const chee = document.getElementById("topping1").checked
+  const mush = document.getElementById("topping2").checked
+  const pep = document.getElementById("topping3").checked
+  const sheeShee = document.getElementById("topping4").checked
+  thePizza.comboLife (chee, mush,pep, sheeShee)
+
+  //const totalOf = new Pizza (custName, thePie, topSelection);
+  let overAllCost = thePizza.comboLife() + thePizza.superSize();
+  let chooseTops = [chee, mush,pep, sheeShee]
 
   document.querySelector("span#nameOfCust").innerHTML = custName;
   document.querySelector("span#sizeOfPizza").innerHTML = thePie;
   document.querySelector("span#topsOfPizza").innerHTML = chooseTops;
   document.querySelector("span#totalFor").innerText = overAllCost;
-  
 }
 
 
