@@ -48,13 +48,22 @@ if (this.size === "small") {
 ___
 
 ## test 3:
-*  *
+*With superSize prototype able to return an individual size, it will return a size value if called to*
 ## code:
 ```
-
+this.size = size
+  if (this.size === "small") {
+    this.cost = 7;
+  } else if (this.size === "medium") {
+    this.cost = 10;
+  } else if (this.size === "large") {
+    this.cost = 14;
+  } else {
+    nothing;
+  }
 ```
 ## output:
-**    **
+**this.size[any size] = value **
 ___
 
 ## test 4:
