@@ -1,39 +1,36 @@
 const nothing = "try again foo!"
 
 //Business Logic//
-function Pizza () {
-  this.topping = [];
-  this.size = "";
-  this.cost = 0
-  this.customer
+function Pizza (toppings, size, customer) {
+  this.toppings = toppings;
+  this.size = size;
+  this.cost = 0;
+  this.customer = customer
 }
 
 Pizza.prototype.superSize = function () {
-  let size = 0;
   if (this.size === "small") {
     this.cost = 7;
   } else if (this.size === "medium") {
     this.cost = 10;
   } else if (this.size === "large") {
     this.cost = 14;
-  } else {
-    nothing;
   }
-  return this.cost;
+  return this.cost
 }
 
 Pizza.prototype.comboLife = function () {
-  let topping = 0;
-  if (this.topping === "vcheese") {
+  if (this.toppings.includes("vcheese")) {
     this.cost += 2;
-  } else if (this.topping === "mushrooms") {
+  } 
+  if (this.toppings.includes("mushrooms")) {
     this.cost += 2;
-  } else if (this.topping === "pepperoni") {
+  } 
+  if (this.toppings.includes("pepperoni")) {
     this.cost += 2;
-  } else if (this.topping === "sausage") {
+  } 
+  if (this.toppings.includes("sausage")) {
     this.cost += 2;
-  } else {
-    nothing;
   }
   return this.cost;
 }
@@ -43,22 +40,22 @@ Pizza.prototype.comboLife = function () {
 
 function lessGo (event) {
   event.preventDefault()
-  let thePizza = new Pizza;
+
   let custName = document.querySelector("input#name").value;
   let thePie = document.getElementById("pizzaSize").value;
-
-  const chee = document.getElementById("topping1").checked.value
-  const mush = document.getElementById("topping2").checked
-  const pep = document.getElementById("topping3").checked
-  const sheeShee = document.getElementById("topping4").checked
-  thePizza.comboLife (chee, mush,pep, sheeShee)
-
-  //const totalOf = new Pizza (custName, thePie, topSelection);
-  let overAllCost = thePizza.comboLife() + thePizza.superSize();
-  let chooseTops = [chee, mush,pep, sheeShee]
-
-  document.querySelector("span#nameOfCust").innerHTML = ("Hey" + " " + custName + ", your order is ready! A" + " " + thePie + " " + "pizza with" + " " + chooseTops + ".");
-  document.querySelector("span#totalFor").innerText = overAllCost;
+  let toppingsArray = [];
+    document.querySelectorAll('input[name=topping]:checked')
+    .forEach(function (element) {
+      let topping = element['value'];
+      toppingsArray.push(topping);
+    });
+  const thePizza = new Pizza(toppingsArray, thePie, custName);
+  thePizza.superSize();
+  thePizza.comboLife();
+  console.log(thePizza)
+  
+  document.querySelector("span#nameOfCust").innerHTML = ("Hey" + " " + thePizza.customer + ", your order is ready! A" + " " + thePizza.size + " " + "pizza with" + " " + thePizza.toppings + ".");
+  document.querySelector("span#totalFor").innerText = "The total cost of" + " " + thePizza.cost + ".";
 }
 
 
