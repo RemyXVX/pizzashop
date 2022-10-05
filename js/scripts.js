@@ -47,7 +47,7 @@ function lessGo (event) {
   let custName = document.querySelector("input#name").value;
   let thePie = document.getElementById("pizzaSize").value;
 
-  const chee = document.getElementById("topping1").checked
+  const chee = document.getElementById("topping1").checked.value
   const mush = document.getElementById("topping2").checked
   const pep = document.getElementById("topping3").checked
   const sheeShee = document.getElementById("topping4").checked
@@ -57,9 +57,7 @@ function lessGo (event) {
   let overAllCost = thePizza.comboLife() + thePizza.superSize();
   let chooseTops = [chee, mush,pep, sheeShee]
 
-  document.querySelector("span#nameOfCust").innerHTML = custName;
-  document.querySelector("span#sizeOfPizza").innerHTML = thePie;
-  document.querySelector("span#topsOfPizza").innerHTML = chooseTops;
+  document.querySelector("span#nameOfCust").innerHTML = ("Hey" + " " + custName + ", your order is ready! A" + " " + thePie + " " + "pizza with" + " " + chooseTops + ".");
   document.querySelector("span#totalFor").innerText = overAllCost;
 }
 
