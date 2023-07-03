@@ -1,6 +1,6 @@
 // import './../assets/styles/styles.css'
 
-const Body = () => {
+const About = () => {
 
   return (
     <>
@@ -11,4 +11,4 @@ const Body = () => {
   )
 }
 
-export default Body;
+export default About;
