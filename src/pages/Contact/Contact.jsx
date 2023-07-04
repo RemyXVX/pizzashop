@@ -88,7 +88,7 @@ const Contact = () => {
           </div>
         )}
       </div>
-      <img className="pt-4 " src={ganggang} atl="a bundle of cute furry buddiesenjoying pizza together" />
+      <img className="pt-4" src={ganggang} atl="a bundle of cute furry buddiesenjoying pizza together" />
     </div>
   );
 }
