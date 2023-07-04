@@ -42,7 +42,7 @@ const Menu = () => {
   ];
 
   return (
-    <div className="bg-[#faeada] w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl py-2">
+    <div className="bg-[#faeada] w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl py-2 rounded-3xl">
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2">Pizza Menu</h1>
       <div className="">
         {pizzas.map((pizza, index) => (

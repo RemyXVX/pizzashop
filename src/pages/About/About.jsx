@@ -3,8 +3,8 @@ import imagetocome from "./../../assets/images/imagetocome.png"
 const About = () => {
   return (
     <>
-      <div>
-        <div className="bg-[#faeada] px-8 py-6">
+      <div className="max-w-[1152px] mx-auto">
+        <div className="bg-[#faeada] px-8 py-6 rounded-3xl">
           <h2 className="text-3xl font-bold mb-4">Our Story:</h2>
           <div className="overflow-y-auto max-h-[500px] md:max-h-auto" style={{WebkitOverflowScrolling: 'touch'}}>
             <div className="mb-6 text-left text-sm md:text-base lg:text-xl">
