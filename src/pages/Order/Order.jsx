@@ -103,7 +103,7 @@ const Order = () => {
       </div>
     </div>
   );
-  
+  // plans for shopify intagration is on its way.
 }
 
 export default Order;

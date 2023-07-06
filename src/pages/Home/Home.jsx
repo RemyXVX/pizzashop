@@ -7,10 +7,10 @@ const Home = () => {
   return (
     <>
       <div className="bg-[#faeada] w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl py-2 rounded-3xl">
-        <div className="border-gray-400 bg-[#faeada] p-4 pt-8 grid place-items-center">
+        <div className="bg-[#faeada] p-4 pt-8 grid place-items-center rounded-3xl">
           <img src={pizzachild} alt="a wacky child holding a plate with four small pizza and also saying PIZZA NIGHT!" className="rounded-3xl" />
         </div>
-        <div className="border-gray-400 bg-[#faeada] p-4 items-center">
+        <div className="bg-[#faeada] p-4 items-center">
           <h1 className="text-2xl md:text-3xl lg:text-6xl font-extrabold">Welcome to Pizzapaloz!</h1>
           <br />
           <h3 className="text-sm md:text-base lg:text-xl mb-4 px-6">
