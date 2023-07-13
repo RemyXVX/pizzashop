@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <>
       <div className="bg-[#faeada] w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl py-2 rounded-3xl">
-        <div className="mt-14">
+        <div className="mt-2">
           <div className="max-w-3xl mx-auto px-1 py-1 sm:py-2 md:py-3">
             <div className="grid grid-col-2">
               <div className="col-span-1">

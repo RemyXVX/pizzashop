@@ -4,10 +4,12 @@ const About = () => {
   return (
     <>
       <div className="max-w-[1152px] mx-auto">
-        <div className="bg-[#faeada] px-8 py-6 rounded-3xl">
-          <h2 className="text-3xl font-bold mb-4">Our Story:</h2>
-          <div className="overflow-y-auto max-h-[500px] md:max-h-auto" style={{WebkitOverflowScrolling: 'touch'}}>
-            <div className="mb-6 text-left text-sm md:text-base lg:text-xl">
+      <div className="bg-[#faeada] px-8 py-6 rounded-3xl">
+        <h2 className="text-3xl font-bold mb-4 inline-block py-2 px-4 bg-gray-800 text-white rounded-full">
+          Our Story
+        </h2>
+        <div className="overflow-y-auto max-h-[500px] p-4 md:max-h-auto bg-[#fffefe] rounded-3xl" style={{WebkitOverflowScrolling: 'touch'}}>
+          <div className="mb-6 text-left text-sm md:text-base lg:text-xl">
               <div className="indent-8 pb-2">
                 Once upon a time, in the sunny waves of Los Angeles, a culinary
                 gem was born—the home of irresistible pies known as Pizzapaloz. It
@@ -63,7 +65,7 @@ const About = () => {
             </div>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4">Awards</h3>
+            <h3 className="text-xl font-bold my-4 inline-block py-2 px-4 bg-gray-800 text-white rounded-full">Awards</h3>
             <div className="grid grid-cols-2 gap-4 mb-6">
               <div className="border border-gray-300 p-4">
                 <img
@@ -84,7 +86,7 @@ const About = () => {
                 <p className="text-gray-600">Recognized by Food Critics</p>
               </div>
             </div>
-            <h3 className="text-xl font-bold mb-4">Magazine Articles</h3>
+            <h3 className="text-xl font-bold mb-4 inline-block py-2 px-4 bg-gray-800 text-white rounded-full">Magazine Articles</h3>
             <div className="grid grid-cols-2 gap-4 mb-6">
               <div className="border border-gray-300 p-4">
                 <img
@@ -107,7 +109,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <h3 className="text-xl font-bold mb-4">Reviews</h3>
+            <h3 className="text-xl font-bold mb-4 inline-block py-2 px-4 bg-gray-800 text-white rounded-full">Reviews</h3>
             <div className="grid grid-cols-2 gap-4 mb-6">
               <div className="border border-gray-300 p-4">
                 <img

@@ -5,7 +5,7 @@ const Form = () => {
   return (
     <div className="container mx-auto">
       <div className="pb-2">
-        <h1 className="text-4xl font-bold">Contact:</h1>
+        <h1 className="text-4xl font-bold inline-block mb-2 sm:mb-4 py-2 px-4 bg-gray-800 text-white rounded-full">Contact:</h1>
         <p className="text-xl font-light pb-2">shoot my line, or tell me a secret</p>
       </div>
       <form
