@@ -37,29 +37,45 @@ const Order = () => {
     return total.toFixed(2);
   };
 
+  const handleReturn = () => {
+    setIsSubmitted(false);
+    setTotal('');
+    setSize('');
+    setQuantity(1);
+  };
+
   const OrderDone = ({ total }) => {
     return (
       <div>
         <p>Thank you for your order! Total: ${total}</p>
+        <button onClick={handleReturn} className="mt-4 bg-red-500 text-white rounded-md px-4 py-2 hover:bg-red-400">
+          Return
+        </button>
       </div>
     );
   };
 
   return (
-    <div className="max-w-[1152px]">
-      <div className="bg-[#faeada] w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl py-2 rounded-3xl">
-        <div className="p-6">
-          {isSubmitted ? (
-            <OrderDone total={total} />
-          ) : (
-            <OrderForm
-              handlePlaceOrder={handlePlaceOrder}
-              handleSizeChange={handleSizeChange}
-              handleQuantityChange={handleQuantityChange}
-              size={size}
-              quantity={quantity}
-            />
-          )}
+    <div className="bg-[#faeada] min-h-screen flex items-center justify-center rounded-3xl">
+      <div className="relative">
+        <h1 className={`text-3xl font-bold mb-4 inline-block py-2 px-4 rounded-full ${isSubmitted ? 'text-white bg-red-500' : 'text-white bg-gray-800'}`}>
+          Get 'em while it's hot!
+        </h1>
+        <div className={`absolute top-0 left-0 bg-${isSubmitted ? 'green' : 'white'}-300 rounded-full p-1`}></div>
+        <div className="max-w-[1152px] w-full px-8">
+          <div className={`bg-opacity-75 bg-white rounded-lg border-2 border-opacity-75 border-gray-500 p-6 ${isSubmitted ? 'bg-green-100 border-green-500' : ''}`}>
+            {isSubmitted ? (
+              <OrderDone total={total} />
+            ) : (
+              <OrderForm
+                handlePlaceOrder={handlePlaceOrder}
+                handleSizeChange={handleSizeChange}
+                handleQuantityChange={handleQuantityChange}
+                size={size}
+                quantity={quantity}
+              />
+            )}
+          </div>
         </div>
       </div>
     </div>
